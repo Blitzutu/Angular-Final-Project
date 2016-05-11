@@ -1,44 +1,84 @@
-.tableHead{
-  font-size: 35px;
-  color: #0000ff;
-/*  -webkit-text-stroke: 1px #ffffff; */
-
+/* Here are all my Styles for my about page. Which has been turned into the "Home" page. Will work on renaming later*/
+.webpageName{
+  text-align: center;
 }
 
-.tableBody{
+.searchArea{
   color:black;
-/*  -webkit-text-stroke: 1px white; */
+  text-align: center;;
+  weight:600;
+  align-content: flex-end;
 }
 
+table{
+  align-self: center;
+  table-layout: fixed;
+  color:black;
+}
+
+.tableDiv{
+  background-size: auto;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+tr{
+  width: 20px;
+}
 .tableRow{
+  font-size: 25px;
+  /*Here i am giving my "synta name", "Language", and "Defintion" their font size */
+}
+
+th{
+  height: 50px
+  width:20%;
   padding: 10px;
 }
 
-.movieName{
-  padding-right: 10px;
-  color:white;
-  font-size:25px;
+.syntax{
+  width:25px;
+  padding: 5px;
+  text-align: left;
+  font-size: 20px;
 }
 
-.genre{
-  color:white;
-  font-size: 25px;
+.lang{
+  text-align: center;
+
 }
 
-.thumbs{
-  margin:2px;
-  height: 30px;
-  width: 30px;
+.def{
+  width:50%;
+  text-align: left;
+
 }
 
+td{
+  height:20px;
+}
+
+
+/*HERE IS MY BACKGROUND PHOTO INFORMATION*/
 body{
-  background-image: url("#");
-  color: black;
+  background-image: url("binary_background5.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
-.movieTable{
-  align-items: center;
+
+/*HERE ARE THE STYLES FOR MY FOOTER*/
+
+.footer{
+  color:black;
+  text-align: center;
+  padding-top: 10px;
+}
+
+a{
+  color:black;
+}
+a:hover{
+  color:blue;
 }
