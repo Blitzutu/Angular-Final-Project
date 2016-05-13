@@ -1,5 +1,5 @@
 angular.module('app')
-    .controller('homeCtrl',function($scope, $window){
+    .controller('AboutCtrl',function($scope, $window){
 
         $scope.languageFilter = [];
 

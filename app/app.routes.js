@@ -2,14 +2,24 @@ angular.module('app')
     .config(function($stateProvider,$urlRouterProvider){
         $urlRouterProvider.otherwise('/home');
         $stateProvider
-            .state('home',{
+        // DUE TO SOME ERRORS, THE FOLLOWING IS CONSIDERED THE HOMEPAGE.
+        // WHEN CHANGING NAME OF FILES & CONTROLERS, CODE BREAKS
+            .state('about',{
                 url:'/home',
-                templateUrl:'home/home.html',
-                controller:"HomeCtrl"
+                templateUrl:'about/about.html',
+                controller:"AboutCtrl"
             })
-          //  .state('about',{
-          //      url:'/about',
-          //      templateUrl:'about/about.html',
-          //      controller:"AboutCtrl"
-          //  });
+            .state('resource',{
+                url:'/resources',
+                templateUrl:'resources/resource.html',
+                controller:"ResourceCtrl"
+            });
+            //.state('contact',{
+            //  url:'/contact',
+            //  templateUrl:'contact.contact.html',
+            //  controller:"ContacCtrl"
+            //});
+
+
+
     });

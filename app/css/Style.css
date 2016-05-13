@@ -1,4 +1,22 @@
-/* Here are all my Styles for my about page. Which has been turned into the "Home" page. Will work on renaming later*/
+/* Here are the Styles for my Index Buttons & Index Page */
+.indexButtons{
+  text-align: center;
+}
+
+.indexBut{
+  height: 50px;
+  width: 130px;
+  background-color: black;
+  color: white;
+  font-size: larger;
+}
+.indexBut:hover{
+  background-color: white;
+  color:black;
+}
+
+/* End of the Index Styles*/
+/*Start of the home Page Dtyles*/
 .webpageName{
   text-align: center;
 }
@@ -9,6 +27,8 @@
   weight:600;
   align-content: flex-end;
 }
+
+
 
 table{
   align-self: center;
@@ -31,7 +51,7 @@ tr{
 }
 
 th{
-  height: 50px
+  height: 50px;
   width:20%;
   padding: 10px;
 }
@@ -82,3 +102,27 @@ a{
 a:hover{
   color:blue;
 }
+
+
+/*Here are the Styles for my Resource Page*/
+.resourceBody{
+  text-align: center;
+  padding: 10px;
+  margin-top: auto;
+  color:black;
+}
+
+.resourceButtons{
+  height:50px;
+  width:200px;
+  background-color: black;
+  font-size:17px;
+  font-weight: bold;
+  margin:2px;
+}
+
+.resourceLinks{
+  color:white;
+}
+
+/* Here are the Styles for my Contact Page*/

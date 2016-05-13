@@ -6,15 +6,20 @@
     <script src="../vendor/angular.js"></script>
     <script src="../vendor/angular-ui-router.js"></script>
     <script src="app.js"></script>
-    <script src="home/home.controllers.js"></script>
+    <script src="resources/resource.controllers.js"></script>
     <script src="about/about.controller.js"></script>
+    <script src="contact/contact.controller.js"></script>
     <script src="app.routes.js"></script>
     <link rel="stylesheet" href="css/Style.css">
 <!--    <link rel="stylesheet" type="text/css" href="styles.css"> -->
 </head>
 <body >
 <h1 class="webpageName">Coders Dictonairy</h1>
-
+  <div class="indexButtons">
+    <button class="indexBut" ui-sref="about">Home</button>
+    <button class="indexBut" ui-sref="resource">Resources</button>
+  <!--  <button class="indexBut" ui-sref="contact">Contact</button> -->
+  </div>
 <ui-view>
 </ui-view>
 
