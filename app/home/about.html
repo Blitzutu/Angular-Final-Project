@@ -23,7 +23,7 @@
       <tr ng-repeat="boom in codeList  | orderBy:sortType:sortReverse | filter:search | filter:myFilter"> <!-- HERE IS THE REPEAT, COMING FROM ABOUT.CONTROLLER.JS $SCOPE.MOVIES -->
         <td class="syntax">{{boom.syntax}}</td>
         <td class="lang">{{boom.language}}</td>
-        <td class="def">{{boom.def}}</td>
+          <td class="def">{{boom.def}}</td>
       </tr>
       </tbody>
   </table>

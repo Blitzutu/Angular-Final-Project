@@ -1,8 +1,8 @@
 angular.module('app')
     .controller('AboutCtrl',function($scope, $window){
 
-        $scope.languageFilter = [];
 
+        $scope.languageFilter = [];
         $scope.myFilter = function(dataArray){
           if ($scope.languageFilter.length > 0 ) {
             language = dataArray.language;

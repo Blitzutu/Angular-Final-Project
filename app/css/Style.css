@@ -28,6 +28,13 @@
   align-content: flex-end;
 }
 
+.searchBar{
+  width: 160px;
+  height:25px;
+  margin:7px;
+  font-size:20px;
+}
+
 
 
 table{

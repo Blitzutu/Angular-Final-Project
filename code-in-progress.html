@@ -19,10 +19,20 @@
   <tbody class="table1">
 
 
-    <tr ng-repeat="boom in codeList  | orderBy:sortType:sortReverse | filter:search | filter:myFilter"> <!-- HERE IS THE REPEAT, COMING FROM ABOUT.CONTROLLER.JS $SCOPE.MOVIES -->
-      <td class="#">{{boom.syntax}}</td>
-      <td class="#">{{boom.language}}</td>
-      <td class="#">{{boom.def}}</td>
+      <tr ng-repeat="boom in codeList  | orderBy:sortType:sortReverse | filter:search | filter:myFilter"> <!-- HERE IS THE REPEAT, COMING FROM ABOUT.CONTROLLER.JS $SCOPE.MOVIES -->
+        <td class="syntax">{{boom.syntax}}</td>
+        <td class="lang">{{boom.language}}</td>
+          <td><button ng-click="toggle();">cool</button></td>
+        <td class="def" ng-hide="auth">Hide</td>
+        <td class="def" ng-show="auth">{{boom.def}}</td>
+Here is the function to make it work for the button to show Defintions
+        $scope.toggle= function(){
+          $scope.auth = true;
+          $scope.auth= !$scope.auth;
+          console.log($scope.auth);
+
+        }
+      </tr>
     </tr>
     </tbody>
 </table>
